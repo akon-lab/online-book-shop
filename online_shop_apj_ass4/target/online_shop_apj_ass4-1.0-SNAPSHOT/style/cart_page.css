@@ -1,0 +1,76 @@
+.sticker {
+    width: 12vh;
+    height: 12vh;
+    background: url(../img/library-012-512.png) rgba(211, 205, 154) center/ 8vh no-repeat;
+    border-radius: 100%;
+    position: relative;
+    bottom: -3vw;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.sticker:hover {
+    background-color: rgba(253, 240, 120);
+    box-shadow: 5px 14px 250px rgba(253, 240, 120, 0.822);
+}
+
+.cart {
+    width: 90%;
+    background-color: rgba(245, 245, 245);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.book {
+    width: 18.5%;
+    transition: ease-in-out 0.27s;
+}
+
+.book img {
+    width: 100%;
+}
+
+.book:hover,
+.cart {
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.7993);
+}
+
+.bill {
+    padding: 1.8% 3%;
+    width: 60%;
+    background-color: rgb(197, 187, 164);
+}
+
+@media(max-width: 770px) {
+    .sticker {
+        width: 13vw;
+        height: 13vw;
+        bottom: -5vw;
+        padding: 10%;
+        background-size: 8vw;
+    }
+    .book {
+        width: 30%;
+    }
+}
+
+@media(max-width: 420px) {
+    .sticker {
+        width: 10vw;
+        height: 10vw;
+        bottom: -8vw;
+        padding: 10%;
+        background-size: 11vw;
+    }
+    .cart {
+        width: 95%;
+    }
+    .book {
+        width: 44%;
+    }
+    .bill {
+        padding: 1.8% 3%;
+        width: 92%;
+    }
+}

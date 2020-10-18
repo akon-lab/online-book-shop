@@ -1,0 +1,75 @@
+.main {
+    width: 70%;
+    padding: 3%;
+    background-color: rgba(211, 205, 154);
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+}
+
+.book .col img,
+.hov-card img {
+    width: 40vh;
+}
+
+.btn-pr {
+    transition: ease-in-out 0.3s;
+}
+
+.btn-pr:hover {
+    color: white;
+}
+
+.carousel {
+    width: 90%;
+}
+
+.hov-card {
+    box-shadow: -1px 2px 6px rgba(1, 24, 16, 0.7993);
+}
+
+.hov-text {
+    top: 0;
+    bottom: 0;
+    position: static;
+    color: white;
+}
+
+@media(max-width:770px) {
+    .main {
+        width: 90%;
+    }
+    .book .col img {
+        width: 40vw;
+    }
+    .carousel-item div {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .hov-card img {
+        width: 28vw;
+    }
+}
+
+@media(max-width:420px) {
+    .main {
+        width: 90%;
+    }
+    .book {
+        flex-direction: column;
+    }
+    .book .col img {
+        width: 75vw;
+    }
+    .carousel-item div {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .hov-card img {
+        width: 40vw;
+    }
+}
